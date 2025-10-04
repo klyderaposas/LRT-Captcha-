@@ -1,2 +1,1 @@
-# LRT-Captcha-
-Only lrt lovers can sole this
+Only can lrt lovers solve this
