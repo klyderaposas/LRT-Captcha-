@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRT Enthusiast Loyalty Check (No-JS, No-CSS)</title>
+</head>
+<body>
+
+    <h1>The LRT Loyalty Check</h1>
+    <p>Prove your devotion to the Light Rail Transit system to proceed.</p>
+
+    <form action="/validate_lrt_lover" method="post">
+        
+        <fieldset>
+            <legend>Which LRT Line has a station named "Vito Cruz"?</legend>
+
+            <label>
+                <input type="radio" name="lrt_line_answer" value="LRT2">
+                LRT-2 (Purple Line)
+            </label><br>
+
+            <label>
+                <input type="radio" name="lrt_line_answer" value="LRT1" required>
+                LRT-1 (Green Line)
+            </label><br>
+
+            <label>
+                <input type="radio" name="lrt_line_answer" value="MRT3">
+                MRT-3 (Blue Line)
+            </label>
+        </fieldset>
+
+        <div style="position: absolute; left: -9999px; height: 1px; overflow: hidden;">
+            <label for="nickname">Leave this field blank to prove you're human (Bots fill this!):</label>
+            <input type="text" id="nickname" name="trap_field" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+</html>
